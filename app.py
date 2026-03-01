@@ -226,24 +226,24 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("💊 MedicaidRx: Spending Estimator & Insights")
+st.title("💊 Medicaid: Spending Estimator & Spending Patterns")
 st.caption("Estimate Medicaid drug reimbursement and explore state-level patterns")
 
 # Tabs 
-tab_about, tab_estimator, tab_insights = st.tabs(["About", "Spending Estimator", "Insights"])
+tab_about, tab_estimator, tab_patterns = st.tabs(["About", "Spending Estimator", "Spending Patterns"])
 
 # ───── About Tab ─────
 with tab_about:
     st.subheader("Overview")
     st.markdown("""
-    This tool analyzes **Medicaid State Drug Utilization Data (2025)** to  
+    This tool analyzes **Medicaid State Drug Utilization Data** to  
     - Identify high-cost and high-volume drugs  
     - Show spending & usage variation across all states  
     - Estimate reimbursement amounts based on utilization inputs  
 
     """)
 
-# ───── Calculator Tab ─────
+# ───── Spending Estimator Tab ─────
 with tab_estimator:
     st.subheader("Estimate Reimbursement Spending")
 
@@ -301,8 +301,8 @@ with tab_estimator:
                 "text/csv"
             )
 
-# ───── Insights Tab ─────
-with tab_insights:
+# ───── Spending Patterns Tab ─────
+with tab_patterns:
     st.subheader("Spending & Utilization Patterns")
 
     # Map section
