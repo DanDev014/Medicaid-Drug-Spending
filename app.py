@@ -229,8 +229,8 @@ st.markdown("""
 st.title("💊 MedicaidRx: Spending Estimator & Insights")
 st.caption("Estimate Medicaid drug reimbursement and explore state-level patterns")
 
-# Tabs (About → Calculator → Insights)
-tab_about, tab_calc, tab_insights = st.tabs(["About", "Calculator", "Insights"])
+# Tabs 
+tab_about, tab_estimator, tab_insights = st.tabs(["About", "Spending Estimator", "Insights"])
 
 # ───── About Tab ─────
 with tab_about:
@@ -244,7 +244,7 @@ with tab_about:
     """)
 
 # ───── Calculator Tab ─────
-with tab_calc:
+with tab_estimator:
     st.subheader("Estimate Reimbursement Spending")
 
     col1, col2 = st.columns(2)
